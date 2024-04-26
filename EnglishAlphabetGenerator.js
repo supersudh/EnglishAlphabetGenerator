@@ -7,7 +7,7 @@ function EngLishAlphabetGenerator(upperCase = true) { // Pass upperCase as true 
             result.push(String.fromCharCode(lowerBound++)); // or toString(............)
             if (lowerBound > upperBound) return result;
         }
-
+        return result;
     } catch (error) {
         throw new Error(error); // We are safe
     }
